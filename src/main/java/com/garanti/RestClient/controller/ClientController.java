@@ -14,6 +14,12 @@ public class ClientController {
     @Autowired
     private ClientService clientService;
 
+    /*@GetMapping()
+    public ResponseEntity< Ogretmen[] > getAll() {
+        Ogretmen[] allOgretmen = clientService.getAllOgretmen();
+        return new ResponseEntity<>(allOgretmen, HttpStatus.OK);
+    }*/
+
     @GetMapping()
     public ResponseEntity< Ogretmen[] > getAll() {
         Ogretmen[] allOgretmen = clientService.getAllOgretmen();
